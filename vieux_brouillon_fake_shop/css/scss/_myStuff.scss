@@ -1,0 +1,29 @@
+@mixin parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+button {
+    background-color:$white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px;
+    &:hover {
+      background-color: gray;  
+    }
+}
+ 
+.btn-green {
+  background-color:green;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  &:hover {
+    background-color: gray;  
+  }
+}

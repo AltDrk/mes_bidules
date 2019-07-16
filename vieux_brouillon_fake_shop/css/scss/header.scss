@@ -1,0 +1,68 @@
+header {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 100vh;
+    color: $white;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+        h1 {
+            background-color: $header-h1bg;
+            border: $header-h1border;
+            margin: auto;
+            padding: 30px 50px;
+            letter-spacing: 3px;
+        }
+}
+
+ // navbar  
+
+ .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+.bg-light {
+    height: 60px;
+    background-color: rgb(31, 23, 25) !important;
+        .nav-link {
+            color: $white !important;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 0 15px 0 15px !important;
+            &:hover {
+                color: white !important;
+            }
+        }
+                .navbar-brand {
+                    color: $white !important;
+                    font-size: 35px;
+                }
+                    .btn-outline-success {
+                        color: $white;
+                        border: none;
+                        font-size: 18px;
+                        font-weight: 600;
+                        &:hover{
+                            background-color: $header-h1bg;
+                        }
+                    }
+                        .form-control {
+                            background-color: transparent;
+                            color: $white !important;
+                            
+                            border-bottom: 1px dotted;
+                        }
+}
+
+.active {
+  background-color: $header-h1bg;
+}
+
+.fixHeight {
+    height: 120px;
+}
+

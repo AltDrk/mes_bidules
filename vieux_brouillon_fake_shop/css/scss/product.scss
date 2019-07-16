@@ -1,0 +1,51 @@
+@import 'scss/bootstrap.scss';
+@import '../scss/_mesVariables.scss';
+@import '../scss/myStuff';
+@import '../scss/header.scss';
+@import '../scss/footer.scss';
+
+.bgProducts {
+    background-image: url('../img/jordan-whitt-53084-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+
+.card {
+    border: none;
+    height: 700px;
+}
+
+.badge-primary {
+    position: absolute;
+    align-self: flex-end;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+
+
+.knowMore a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.modal-body {
+    background-color: transparent;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+        .modal-header {
+            border: none;
+            background-color:$header-h1bg;
+        }
+            .modal-title {
+                color: whitesmoke;
+            }
+}
