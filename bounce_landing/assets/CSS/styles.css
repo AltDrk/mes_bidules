@@ -1,0 +1,340 @@
+body{
+  background-color: rgb(54, 69, 79);
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(112, 128, 144);
+}
+h1 {
+  color: rgb(112, 128, 144);
+  text-align: center;
+  margin: 100px 0 30px 0;
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;  
+}
+h2 {
+  margin: 50px 0 20px 0;
+  text-align: center;
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;  
+}
+h4 {
+  text-align: center;
+  margin-bottom: 50px;
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;  
+}
+p {
+  font-size: 25px;
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;  
+}
+.col{
+  text-align: center;
+}
+
+img {
+  max-width: 50%;
+}
+.retour{
+display: block;
+text-align: left;
+font-size: 50px;
+margin-left: 50px;
+color: #626D75;
+}
+
+.html, .js, .css {
+  margin: 20px auto;
+}
+
+a {
+  color: #626D75;
+}
+
+/* quiz */
+.my_slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+  margin-bottom: 30px;
+}
+  
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+  margin-bottom: 30px;
+}
+
+
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.answers {
+  font-size: 20px;
+  text-align: left;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+}
+
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+
+}
+.quizContainer{
+    width: 50%;
+    margin: auto;
+}
+
+.question {
+  color: whitesmoke;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #626D75;
+  width: 200px;
+  height: 50px;
+  border: none;
+  color: white;
+  margin-top: 20px;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 20px;
+  color: orange;
+}
+
+  /* Animations */
+
+#html {
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+  
+
+#css {
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+#js {
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.8s;  
+}
+
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+
+#bounceInAll {
+  animation-name: bounceInAll;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes bounceInAll{
+  0%{
+    
+    transform: scale(1) ;
+  }
+  50%{
+    
+    transform: scale(1.1);
+  }
+  80%{
+    
+    transform: scale(0.8);
+  }
+  100%{
+    
+    transform: scale(1) ;
+  }
+}
+
+.link {
+  transition: transform .2s;
+}
+
+.link:hover {
+  transform: scale(0.8) ;
+}
+
+
+
+/* modal */
+
+.modalImg {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content1 {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  width: 60%;
+  text-align: center;
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 1s;
+  animation-name: animate;
+  animation-duration: 2s ease;
+}
+
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@keyframes animate {
+  from {
+    top: -300px;
+    opacity: 0
+  }
+
+  to {
+    top: 0;
+    opacity: 1
+  }
+}
+
+
+/* overlay curtain */
+
+.overlay {
+height: 100%;
+width: 0;
+position: fixed; 
+z-index: 1;
+left: 0;
+top: 0;
+background-color: rgb(0,0,0); 
+background-color: rgba(0,0,0, 0.9);
+overflow-x: hidden; 
+transition: 0.5s;
+color: whitesmoke;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px; 
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+#overlayP {
+  margin-top: 0;
+  opacity: 0;
+}
+
+.overlayPactive {
+  margin-top: 0;
+  animation-name: bounceIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s; 
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.para {
+  margin-bottom: 100px;
+}
+
+
